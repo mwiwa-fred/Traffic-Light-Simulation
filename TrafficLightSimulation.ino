@@ -1,31 +1,21 @@
-// Traffic Light Simulation using ESP32
+// LED Traffic Light Simulation
+// This program simulates a traffic light system with a pedestrian crossing button.
 
-// Pin definitions
-const int redLightPin = ;   //Pick a GPIO pin for Red.
-const int yellowLightPin = ; // Pick a GPIO pin for Yellow.
-const int greenLightPin = ;  // Pick a GPIO pin for Green.
+const int redLightPin = 23;   // Red LED connected to GPIO 23
+const int yellowLightPin = 22; // Yellow LED connected to GPIO 22
+const int greenLightPin = 21;  // Green LED connected to GPIO 21
+const int buttonPin = 19;      // Pedestrian crossing button connected to GPIO 19
 
 void setup() {
   // Initialize the LED pins as outputs
-  pinMode(redLightPin, OUTPUT);
-  pinMode(yellowLightPin, OUTPUT);
-  pinMode(greenLightPin, OUTPUT);
+  // TODO: Set the button pin as INPUT
 }
 
 void loop() {
-  // Red light for 5 seconds
-  digitalWrite(redLightPin, HIGH);  // Turn on red light
-  digitalWrite(yellowLightPin, LOW); // Turn off yellow light
-  digitalWrite(greenLightPin, LOW);  // Turn off green light
-
-  // Green light for 5 seconds
-  digitalWrite(redLightPin, LOW);   // Turn off red light
-  digitalWrite(yellowLightPin, LOW); // Turn off yellow light
-  digitalWrite(greenLightPin, HIGH); // Turn on green light
-
-  // Yellow light for 2 seconds
-  digitalWrite(redLightPin, LOW);   // Turn off red light
-  digitalWrite(yellowLightPin, HIGH); // Turn on yellow light
-  digitalWrite(greenLightPin, LOW);  // Turn off green light
+  // TODO: Implement the traffic light sequence
+  // Use delays for light timing: Red, Yellow, Green
+  
+  // TODO: Implement pedestrian crossing logic
+  // Change light sequence when button is pressed
 }
 
