@@ -1,7 +1,5 @@
 # Traffic-Light-Simulation
 
-A traffic light simulation using Arduino.
-
 ## Description
 
 This project simulates a traffic light system with LED indicators for Red, Yellow, and Green lights. It can also include pedestrian crossing functionality.
